@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_baseline_group_24"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_baseline_list_alt_24"
+            android:title="Encuestas Registradas" />
+        <item
+            android:id="@+id/nav_ludocheck"
+            android:icon="@drawable/zoom"
+            android:title="Ludopata Check" />
+        <item
+            android:id="@+id/nav_rankuser"
+            android:icon="@drawable/stars"
+            android:title="Mi Calificacion" />
+        <item
+            android:id="@+id/nav_sendquery"
+            android:icon="@drawable/ic_baseline_sync_24"
+            android:title="Sincronizar" />
+    </group>
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_login"
+        android:title="Log in" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log out" />
+    </group>
+</menu>
