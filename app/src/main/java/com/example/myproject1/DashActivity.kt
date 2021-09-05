@@ -9,17 +9,31 @@ import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_dash.*
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
 import android.R.id
-
-
+import android.widget.TextView
+import android.view.View
+import android.widget.EditText
 
 
 class DashActivity : AppCompatActivity() {
+
+    private var textView16: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash)
 
+        textView16 = findViewById<View>(R.id.textView16) as TextView
+        val parametros = intent.extras
+        if (parametros != null) {
+            textView16!!.text = parametros.getString("Servicios")
+        }
+
         linearLayout_2.setOnClickListener {
             startActivity(Intent(this, DatosClientesActivity::class.java))
+        }
+
+        linearLayout_4.setOnClickListener {
+            startActivity(Intent(this, ServiciosActivity::class.java))
         }
 
     }

@@ -274,7 +274,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="Sala de Juego"
+            android:text="Seleccione un Servicio"
             android:textColor="@color/white"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/linearLayout"
