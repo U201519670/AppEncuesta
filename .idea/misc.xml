@@ -28,7 +28,11 @@
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.1125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_branch_64.xml" value="0.1125" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_spinner_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/item_spinner_style.xml" value="0.2203125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/rb_options.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/spinner_selector.xml" value="0.2203125" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/spinner_style.xml" value="0.2203125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/txt_rb.xml" value="0.2203125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_club_casino_cash.xml" value="0.182518115942029" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_dash.xml" value="0.22" />
@@ -37,6 +41,8 @@
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_sala_de_juego.xml" value="0.182518115942029" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_servicios.xml" value="0.1431159420289855" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/fragment_home.xml" value="0.19293478260869565" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/item_spinner_framework.xml" value="0.25" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/item_spinner_inicial.xml" value="0.1585144927536232" />
       </map>
     </option>
   </component>

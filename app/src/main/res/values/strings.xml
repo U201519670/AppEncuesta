@@ -10,4 +10,21 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name = "locales">
+
+        <item>Local Miraflores</item>
+        <item>Local La Molina</item>
+        <item>Local Surco</item>
+
+    </string-array>
+
+    <string-array name = "servicios">
+
+        <item>Sala de Juego</item>
+        <item>Club CasinoCash</item>
+        <item>Restaurante</item>
+
+    </string-array>
+
 </resources>

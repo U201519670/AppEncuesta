@@ -6,6 +6,11 @@ import android.view.View
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
+import android.R.attr.checked
+
+
+import android.R.attr
+
 
 class DatosClientesActivity : AppCompatActivity() {
 
@@ -67,7 +72,5 @@ class DatosClientesActivity : AppCompatActivity() {
         i.putExtra("celular", celular!!.text.toString())
         startActivity(i)
     }
-
-    //Metodo para el botón enviar
 
 }

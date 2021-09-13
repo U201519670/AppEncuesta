@@ -10,9 +10,8 @@ import kotlinx.android.synthetic.main.activity_dash.*
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
 import android.R.id
 import android.content.Context
-import android.widget.TextView
 import android.view.View
-import android.widget.EditText
+import android.widget.*
 
 
 class DashActivity : AppCompatActivity() {
@@ -25,11 +24,65 @@ class DashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash)
 
+        //Spinner de Locales
+        val spinner = findViewById<Spinner>(R.id.spnLocales)
+
+        //val lista = listOf("PHP", "C++","SQL", "Java")
+
+        val lista = resources.getStringArray(R.array.locales)
+
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista)
+        spinner.adapter = adaptador
+
+        spinner.onItemSelectedListener = object:
+            AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Toast.makeText(this@DashActivity,lista[position],Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
+        //Spinner de Servicios
+        val spinner2 = findViewById<Spinner>(R.id.spnServicios)
+
+        //val lista = listOf("PHP", "C++","SQL", "Java")
+
+        val lista2 = resources.getStringArray(R.array.servicios)
+
+        val adaptador2 = ArrayAdapter(this, android.R.layout.simple_spinner_item, lista2)
+        spinner2.adapter = adaptador2
+
+        spinner2.onItemSelectedListener = object:
+            AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                Toast.makeText(this@DashActivity,lista2[position],Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
         linearLayout_3.setOnClickListener {
             startActivity(Intent(this, DatosClientesActivity::class.java))
         }
 
-        linearLayout_5.setOnClickListener {
+        /**linearLayout_5.setOnClickListener {
             startActivity(Intent(this, ServiciosActivity::class.java))
         }
 
@@ -37,7 +90,7 @@ class DashActivity : AppCompatActivity() {
         val editor = intent.getStringExtra("MY_SHARED_PREF")
         if (editor != null) {
             textView16!!.text = editor
-        }
+        }**/
 
         textView12 = findViewById<View>(R.id.textView12) as TextView
         val nombres = intent.getStringExtra("nombres")
@@ -66,40 +119,5 @@ class DashActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
-    }
-
-    override fun onStart() {
-        super.onStart()
-
-    }
-
-    override fun onResume() {
-        super.onResume()
-
-    }
-
-    fun mostrarDato() {
-
-
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-    }
-
-    override fun onStop() {
-        super.onStop()
-
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-
     }
 }
