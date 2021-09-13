@@ -9,6 +9,7 @@ import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_dash.*
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
 import android.R.id
+import android.content.Context
 import android.widget.TextView
 import android.view.View
 import android.widget.EditText
@@ -17,23 +18,37 @@ import android.widget.EditText
 class DashActivity : AppCompatActivity() {
 
     private var textView16: TextView? = null
+    private var textView12: TextView? = null
+    private var textView13: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dash)
 
-        textView16 = findViewById<View>(R.id.textView16) as TextView
-        val parametros = intent.extras
-        if (parametros != null) {
-            textView16!!.text = parametros.getString("Servicios")
-        }
-
-        linearLayout_2.setOnClickListener {
+        linearLayout_3.setOnClickListener {
             startActivity(Intent(this, DatosClientesActivity::class.java))
         }
 
-        linearLayout_4.setOnClickListener {
+        linearLayout_5.setOnClickListener {
             startActivity(Intent(this, ServiciosActivity::class.java))
+        }
+
+        textView16 = findViewById<View>(R.id.textView16) as TextView
+        val editor = intent.getStringExtra("MY_SHARED_PREF")
+        if (editor != null) {
+            textView16!!.text = editor
+        }
+
+        textView12 = findViewById<View>(R.id.textView12) as TextView
+        val nombres = intent.getStringExtra("nombres")
+        if (nombres != null) {
+            textView12!!.text = nombres
+        }
+
+        textView13 = findViewById<View>(R.id.textView13) as TextView
+        val dni = intent.getStringExtra("dni")
+        if (dni != null) {
+            textView13!!.text = dni
         }
 
     }
@@ -51,5 +66,40 @@ class DashActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+    }
+
+    fun mostrarDato() {
+
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
     }
 }

@@ -1,56 +1,70 @@
 package com.example.myproject1
 
 import android.content.Intent
-import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
-import android.widget.AdapterView.OnItemClickListener
-import android.widget.ArrayAdapter
-import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.nav_header_main.*
+import android.widget.RadioGroup
+import android.widget.TextView
+import android.os.Bundle
+import android.widget.RadioButton
+import android.content.SharedPreferences
+import android.view.View
+import kotlinx.android.synthetic.main.activity_dash.*
+import kotlinx.android.synthetic.main.activity_datos_clientes.*
+import android.R.attr.checked
 
 
-class ServiciosActivity : AppCompatActivity(), OnItemClickListener  {
+import android.R.attr
 
-    private var lista_servicios: ListView? = null
-    private val datos = arrayOf("SALA DE JUEGO", "CLUB CASINOCASH", "RESTAURANTE")
+
+class ServiciosActivity : AppCompatActivity() {
+
+    var radioGroup: RadioGroup? = null
+    var textCheckedID: TextView? = null
+    var textCheckedIndex: TextView? = null
+    val KEY_SAVED_RADIO_BUTTON_INDEX = "SAVED_RADIO_BUTTON_INDEX"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_servicios)
-        lista_servicios = findViewById<View>(R.id.lista_servicios) as ListView
-        val adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, datos)
-        lista_servicios!!.onItemClickListener = this
-        lista_servicios!!.adapter = adaptador
+        radioGroup = findViewById<View>(R.id.radiogroup) as RadioGroup
+        radioGroup!!.setOnCheckedChangeListener(radioGroupOnCheckedChangeListener)
+        textCheckedID = findViewById<View>(R.id.checkedid) as TextView
+        textCheckedIndex = findViewById<View>(R.id.checkedindex) as TextView
+        LoadPreferences()
 
-        /**val arrayAdapter:ArrayAdapter<*>
-
-        val servicios = mutableListOf("SALA DE JUEGO", "CLUB CASINOCASH", "RESTAURANTE")
-        val lista_servicios = findViewById<ListView>(R.id.lista_servicios)
-
-        val adaptador = ArrayAdapter(this, android.R.layout.simple_list_item_1, servicios)
-        lista_servicios.adapter = adaptador
-
-        lista_servicios.onItemClickListener = OnItemClickListener {
-                parent, view, position, id ->
-            val selectedItemText = parent.getItemAtPosition(position)
-            textView.text = "Selected : $selectedItemText"
+        datos_cliente.setOnClickListener {
+            startActivity(Intent(this, DashActivity::class.java))
         }
-
-        //lista_servicios.setOnItemClickListener(){parent,view,position,id->
-
-        //    Toast.makeText(this, parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show()
-
-        //}**/
 
     }
 
-    override fun onItemClick(adapterView: AdapterView<*>, view: View, i: Int, l: Long) {
-        val valor = adapterView.getItemAtPosition(i) as String
-        val nuevoform = Intent(this@ServiciosActivity, DashActivity::class.java)
-        nuevoform.putExtra("Servicios", valor)
-        startActivity(nuevoform)
+    var radioGroupOnCheckedChangeListener = RadioGroup.OnCheckedChangeListener { group, checkedId ->
+        val checkedRadioButton = radioGroup!!.findViewById<View>(checkedId) as RadioButton
+        val checkedIndex = radioGroup!!.indexOfChild(checkedRadioButton)
+        textCheckedID!!.text = "checkedID = $checkedId"
+        textCheckedIndex!!.text = "checkedIndex = $checkedIndex"
+        SavePreferences(KEY_SAVED_RADIO_BUTTON_INDEX, checkedIndex)
+    }
+
+    private fun SavePreferences(key: String, value: Int) {
+        val sharedPreferences = getSharedPreferences("MY_SHARED_PREF", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putInt(key, value)
+        editor.commit()
+        startActivity(Intent(this, DashActivity::class.java))
+        val i = Intent(this, DashActivity::class.java)
+        i.putExtra("MY_SHARED_PREF", textCheckedIndex!!.text.toString())
+        startActivity(i)
+    }
+
+    private fun LoadPreferences() {
+        val sharedPreferences = getSharedPreferences("MY_SHARED_PREF", MODE_PRIVATE)
+        val savedRadioIndex = sharedPreferences.getInt(KEY_SAVED_RADIO_BUTTON_INDEX, 0)
+        val savedCheckedRadioButton = radioGroup!!.getChildAt(savedRadioIndex) as RadioButton
+        savedCheckedRadioButton.isChecked = true
     }
 
 }
+
+
+

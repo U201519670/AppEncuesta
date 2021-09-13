@@ -1,10 +1,10 @@
 package com.example.myproject1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
 
 class DatosClientesActivity : AppCompatActivity() {
@@ -59,6 +59,15 @@ class DatosClientesActivity : AppCompatActivity() {
         Obj_editarCliente3.commit()
         Obj_editarCliente4.commit()
         startActivity(Intent(this, DashActivity::class.java))
+        val i = Intent(this, DashActivity::class.java)
+        i.putExtra("dni", dni!!.text.toString())
+        i.putExtra("nombres", nombres!!.text.toString())
+        i.putExtra("apellidos", apellidos!!.text.toString())
+        i.putExtra("correo", correo!!.text.toString())
+        i.putExtra("celular", celular!!.text.toString())
+        startActivity(i)
     }
+
+    //Metodo para el botón enviar
 
 }

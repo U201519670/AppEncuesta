@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject1">
         <activity
+            android:name=".Restaurante"
+            android:exported="true" />
+        <activity
+            android:name=".ClubCasinoCash"
+            android:exported="true" />
+        <activity
+            android:name=".SalaDeJuego"
+            android:exported="true" />
+        <activity
             android:name=".ServiciosActivity"
             android:exported="true" />
         <activity
