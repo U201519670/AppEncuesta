@@ -16,7 +16,7 @@ import android.widget.*
 
 class DashActivity : AppCompatActivity() {
 
-    private var textView16: TextView? = null
+    //private var textView16: TextView? = null
     private var textView12: TextView? = null
     private var textView13: TextView? = null
 
