@@ -71,7 +71,7 @@
         android:id="@+id/linearLayout_1"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:padding="8dp"
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="Local seleccionado:     "
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -92,6 +92,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Spinner
+            android:layout_marginTop="8dp"
             android:id="@+id/spnLocales"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,7 +144,7 @@
         android:id="@+id/linearLayout_3"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:paddingLeft="8dp"
@@ -243,7 +244,7 @@
         android:id="@+id/linearLayout_5"
         android:layout_width="wrap_content"
         android:layout_height="140dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
         android:padding="8dp"
@@ -255,7 +256,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="Nuestros Servicios:      "
             android:textColor="@color/white"
             android:textSize="20sp"
@@ -264,6 +265,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Spinner
+            android:layout_marginTop="8dp"
             android:id="@+id/spnServicios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

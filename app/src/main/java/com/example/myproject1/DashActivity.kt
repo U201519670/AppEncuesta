@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_dash.*
 import kotlinx.android.synthetic.main.activity_datos_clientes.*
 import android.R.id
 import android.content.Context
+import android.location.Location
 import android.view.View
 import android.widget.*
 
@@ -69,6 +70,7 @@ class DashActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
+                val position = position
                 Toast.makeText(this@DashActivity,lista2[position],Toast.LENGTH_SHORT).show()
             }
 
@@ -105,6 +107,7 @@ class DashActivity : AppCompatActivity() {
         }
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.activity_dash_menu, menu)
@@ -120,4 +123,5 @@ class DashActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
