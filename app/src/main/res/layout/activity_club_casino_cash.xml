@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClubCasinoCash">
+
+    <TextView
+        android:id="@+id/cc_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Club CasinoCash"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/cc_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Por favor, seleccione la respuesta apropiada para cada concepto:"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:id="@+id/cc_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="1. Nivel de Satisfacción con los beneficios del Club" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_1"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p1_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p1_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p1_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p1_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p1_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="2. Satisfacción en la automatización de promociones y sorteos" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_2"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p2_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p2_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p2_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p2_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p2_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="3. Satisfacción con la comunicación en canales digitales" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_3"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p3_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p3_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p3_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p3_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p3_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="4. ¿Nos recomendaría con personas de otros clubes?" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_4"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p4_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p4_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p4_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p4_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p4_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="5. ¿Dada su experiencia anterior, volvería a usar nuestro servicio?" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_5"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p5_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p5_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p5_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p5_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p5_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="6. Amabilidad de nuestro Personal de atención al cliente" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_6"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p6_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p6_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p6_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p6_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p6_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/cc_p7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="7. Amabilidad de nuestro Personal de soporte al cliente" />
+
+            <RadioGroup
+                android:id="@+id/rg_cc_7"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/cc_p7_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/cc_p7_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/cc_p7_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/cc_p7_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/cc_p7_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cc_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/caja_dash"
+                android:text="Guardar"
+                android:textColor="#B30817"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

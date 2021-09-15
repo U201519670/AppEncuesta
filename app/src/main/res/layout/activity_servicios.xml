@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ServiciosActivity">
+
+    <TextView
+        android:id="@+id/titulo_servicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="Nuestros Servicios"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#B33A44"
+            android:buttonTint="#B30817"
+            android:text="SALA DE JUEGO" />
+
+        <RadioButton
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#B33A44"
+            android:buttonTint="#B30817"
+            android:text="CLUB CASINOCASH" />
+
+        <RadioButton
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#B33A44"
+            android:buttonTint="#B30817"
+            android:text="RESTAURANTE" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/checkedid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/checkedindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/datos_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/caja_dash"
+        android:text="Continuar"
+        android:textColor="#B30817"
+        android:textSize="20sp"/>
+
+</LinearLayout>

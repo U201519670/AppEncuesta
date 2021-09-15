@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SalaDeJuego">
+
+    <TextView
+        android:id="@+id/sj_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Sala de Juego"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sj_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Por favor, seleccione la respuesta apropiada para cada concepto:"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:id="@+id/sj_p1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="1. Satisfacción del protocolo de bioseguridad al ingreso" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_1"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p1_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p1_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p1_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p1_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p1_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="2. Satisfacción del protocolo de bioseguridad en sala" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_2"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p2_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p2_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p2_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p2_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p2_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="3. Seguridad durante mi estadía en Casino" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_3"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p3_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p3_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p3_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p3_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p3_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="4. Maquina de Azar y Diversidad de Juegos" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_4"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p4_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p4_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p4_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p4_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p4_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="5. Ventilación y circulación del aire en la Sala de Juegos" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_5"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p5_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p5_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p5_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p5_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p5_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="6. Tiempos de Respuesta antes solicitudes en Máquinas de Azar" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_6"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p6_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p6_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p6_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p6_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p6_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/sj_p7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="7. Claridad respuestas respecto de mis dudas en juegos" />
+
+            <RadioGroup
+                android:id="@+id/rg_sj_7"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sj_p7_1"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <RadioButton
+                    android:id="@+id/sj_p7_2"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <RadioButton
+                    android:id="@+id/sj_p7_3"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="3" />
+
+                <RadioButton
+                    android:id="@+id/sj_p7_4"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <RadioButton
+                    android:id="@+id/sj_p7_5"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:button="@android:color/transparent"
+                    android:textColor="@drawable/txt_rb"
+                    android:textStyle="bold"
+                    android:background="@drawable/rb_options"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="5" />
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sj_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/caja_dash"
+                android:text="Guardar"
+                android:textColor="#B30817"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

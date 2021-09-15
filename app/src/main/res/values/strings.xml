@@ -15,4 +15,29 @@
     <string name="menu_sendquery">Sincronizar</string>
     <string name="menu_login">Log In</string>
     <string name="menu_exitapp">Cerrar App</string>
+
+    <string-array name = "locales">
+
+        <item>Local Miraflores</item>
+        <item>Local La Molina</item>
+        <item>Local Surco</item>
+
+    </string-array>
+
+    <string-array name = "servicios">
+
+        <item>Sala de Juego</item>
+        <item>Club CasinoCash</item>
+        <item>Restaurante</item>
+
+    </string-array>
+
+    <string-array name = "ludopata">
+
+        <item>11111111</item>
+        <item>22222222</item>
+        <item>33333333</item>
+
+    </string-array>
+
 </resources>
