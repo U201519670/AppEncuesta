@@ -3,19 +3,54 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/boton_redondeado1.xml" value="0.38333333333333336" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/boton_redondeado2.xml" value="0.38333333333333336" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable-v24/ic_premio_menu_background.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable-v24/ic_premio_menu_foreground.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/ic_baseline_sync_24.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/img_calificacion.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/img_enviarcorreo.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/drawable/img_regalo.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_calificacion.xml" value="0.26875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_calificacion_user.xml" value="0.18697916666666667" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_club_casino_cash.xml" value="0.1796875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_dash.xml" value="0.2" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_datos_clientes.xml" value="0.1796875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_enviar_correo.xml" value="0.26875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_envio_correo.xml" value="0.18697916666666667" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_final_encuesta.xml" value="0.22" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_goodbye.xml" value="0.14270833333333333" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_main.xml" value="0.25905797101449274" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_restaurante.xml" value="0.1796875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_ruleta.xml" value="0.2509057971014493" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/activity_sala_de_juego.xml" value="0.1796875" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/app_bar_main.xml" value="0.25905797101449274" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/content_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/fragment_gallery.xml" value="0.19882246376811594" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/fragment_home.xml" value="0.19882246376811594" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/fragment_slideshow.xml" value="0.25905797101449274" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/ludopata_check_fragment2.xml" value="0.19882246376811594" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/nav_header_main.xml" value="0.19882246376811594" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/ranking_user_fragment.xml" value="0.19882246376811594" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/rueda_fortuna.xml" value="0.2509057971014493" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/layout/send_encuesta_fragment.xml" value="0.27291666666666664" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/menu/activity_dash_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/menu/activity_main_drawer.xml" value="0.27291666666666664" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/menu/main.xml" value="0.27291666666666664" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/mipmap-anydpi-v26/ic_premio_menu.xml" value="0.2890625" />
+        <entry key="..\:/UPC/2 CICLO/PLATAFORMASMOVILES/pro_encuesta/app/src/main/res/mipmap-anydpi-v26/ic_premio_menu_round.xml" value="0.2890625" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/ic_menu_camera.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/activity_dash.xml" value="0.3671875" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/activity_form.xml" value="0.4" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/activity_goodbye.xml" value="0.264" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/activity_main.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/app_bar_main.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/content_main.xml" value="0.264" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/fragment_gallery.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/fragment_home.xml" value="0.3671875" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/login_fragment.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/ludopata_check_fragment.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/ludopata_check_fragment2.xml" value="0.264" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/nav_header_main.xml" value="0.3671875" />
@@ -23,33 +58,10 @@
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/ranking_user_fragment.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/send_encuesta_fragment.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/activity_dash_menu.xml" value="0.3671875" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/activity_form_menu.xml" value="0.2546875" />
-        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/activity_goodbye_menu.xml" value="0.2546875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/activity_main_drawer.xml" value="0.6" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/main.xml" value="0.2546875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.38333333333333336" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/button_general.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/caja_dash.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/cut_card_background.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.1125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_branch_64.xml" value="0.1125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/ic_spinner_24.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/item_spinner_style.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/rb_options.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/spinner_selector.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/spinner_style.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/drawable/txt_rb.xml" value="0.2203125" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_club_casino_cash.xml" value="0.182518115942029" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_dash.xml" value="0.22" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_datos_clientes.xml" value="0.2" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_restaurante.xml" value="0.182518115942029" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_sala_de_juego.xml" value="0.182518115942029" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/activity_servicios.xml" value="0.1431159420289855" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/fragment_home.xml" value="0.19293478260869565" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/item_spinner_framework.xml" value="0.25" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta/app/src/main/res/layout/item_spinner_inicial.xml" value="0.1585144927536232" />
       </map>
     </option>
   </component>

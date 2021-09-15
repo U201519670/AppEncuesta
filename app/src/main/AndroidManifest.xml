@@ -11,12 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyProject1">
-<!--        <activity
+        <activity
+            android:name=".EnvioCorreo"
+            android:exported="true" />
+        <!--
+                <activity
             android:name=".GoodbyeActivity"
             android:exported="true" />
         <activity
             android:name=".FormActivity"
-            android:exported="true" />-->
+            android:exported="true" />
+        -->
         <activity
             android:name=".Restaurante"
             android:exported="true" />
@@ -54,7 +59,7 @@
         </activity>
         <activity
             android:name=".FormActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -63,7 +68,7 @@
         </activity>
         <activity
             android:name=".GoodbyeActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
