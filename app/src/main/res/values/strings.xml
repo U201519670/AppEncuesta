@@ -16,7 +16,7 @@
     <string name="menu_login">Log In</string>
     <string name="menu_exitapp">Cerrar App</string>
 
-    <string-array name = "locales">
+    <string-array name="locales">
 
         <item>Local Miraflores</item>
         <item>Local La Molina</item>
@@ -24,7 +24,7 @@
 
     </string-array>
 
-    <string-array name = "servicios">
+    <string-array name="servicios">
 
         <item>Sala de Juego</item>
         <item>Club CasinoCash</item>
@@ -32,7 +32,7 @@
 
     </string-array>
 
-    <string-array name = "ludopata">
+    <string-array name="ludopata">
 
         <item>11111111</item>
         <item>22222222</item>

@@ -15,7 +15,7 @@ import android.view.View
 import android.widget.*
 
 
-class DashActivity : AppCompatActivity() {
+class DashActivity : AppCompatActivity(), View.OnClickListener {
 
     //private var textView16: TextView? = null
     private var textView12: TextView? = null
@@ -106,6 +106,9 @@ class DashActivity : AppCompatActivity() {
             textView13!!.text = dni
         }
 
+        val btnform: Button = this.findViewById(R.id.botonform)
+        btnform.setOnClickListener(this)
+        return
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -121,6 +124,13 @@ class DashActivity : AppCompatActivity() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onClick(p0: View?) {
+        when(p0?.id)
+        {
+            R.id.botonform -> startActivity(Intent(this,FormActivity::class.java))
         }
     }
 
