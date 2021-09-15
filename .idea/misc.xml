@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/boton_redondeado1.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/boton_redondeado2.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/drawable/ic_menu_camera.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/activity_dash.xml" value="0.3671875" />
@@ -11,6 +13,7 @@
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/content_main.xml" value="0.264" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/fragment_gallery.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/fragment_home.xml" value="0.3671875" />
+        <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/login_fragment.xml" value="0.3671875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/ludopata_check_fragment.xml" value="0.1585144927536232" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/ludopata_check_fragment2.xml" value="0.264" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/layout/nav_header_main.xml" value="0.3671875" />

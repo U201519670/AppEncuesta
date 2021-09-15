@@ -9,32 +9,74 @@
         android:id="@+id/nav_home"
         android:name="com.example.myproject1.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_rankuser"
+            app:destination="@id/nav_rankuser" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_sendquery"
+            app:destination="@id/nav_sendquery" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_ludocheck"
+            app:destination="@id/nav_ludocheck" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.example.myproject1.ui.gallery.GalleryFragment"
+        android:name="com.example.myproject1.ui.myperfil.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.myproject1.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/nav_ludocheck"
         android:name="com.example.myproject1.ui.ludocheck.LudopataCheck"
-        android:label="Ludopata Check"
-        tools:layout="@layout/ludopata_check_fragment2" />
+        android:label="@string/menu_ludocheck"
+        tools:layout="@layout/ludopata_check_fragment2" >
+        <action
+            android:id="@+id/action_nav_ludocheck_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/nav_rankuser"
         android:name="com.example.myproject1.ui.rankuser.RankingUser"
-        android:label="Ranking Colaborador"
-        tools:layout="@layout/ranking_user_fragment" />
+        android:label="@string/menu_rankuser"
+        tools:layout="@layout/ranking_user_fragment" >
+        <action
+            android:id="@+id/action_nav_rankuser_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/nav_sendquery"
         android:name="com.example.myproject1.ui.sendquery.SendEncuesta"
-        android:label="Send Encuesta"
-        tools:layout="@layout/send_encuesta_fragment" />
+        android:label="@string/menu_sendquery"
+        tools:layout="@layout/send_encuesta_fragment" >
+        <action
+            android:id="@+id/action_nav_sendquery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.myproject1.ui.Login"
+        android:label="@string/menu_login"
+        tools:layout="@layout/login_fragment" >
+    </fragment>
 </navigation>
