@@ -14,7 +14,7 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_goodbye)
 
 
-        val btnend: Button = this.findViewById(R.id.botonend)
+        val btnend: Button = this.findViewById(R.id.btn_giroruleta)
         btnend.setOnClickListener(this)
         return
     }
@@ -37,7 +37,7 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(p0: View?) {
         when (p0?.id) {
-            R.id.botonend -> startActivity(Intent(this, MainActivity::class.java))
+            R.id.btn_giroruleta -> startActivity(Intent(this, RegaloUser::class.java))
         }
     }
 
