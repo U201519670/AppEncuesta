@@ -20,6 +20,8 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
         btncalificacion.setOnClickListener(this)
         val btnenviar: Button = this.findViewById(R.id.btn_enviar)
         btnenviar.setOnClickListener(this)
+        val btnfinalizar: Button = this.findViewById(R.id.btn_finalizar)
+        btnenviar.setOnClickListener(this)
         return
     }
 
@@ -48,6 +50,9 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
         }
         when (p0?.id) {
             R.id.btn_enviar -> startActivity(Intent(this, EnviarCorreo::class.java))
+        }
+        when (p0?.id) {
+            R.id.btn_finalizar -> startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
