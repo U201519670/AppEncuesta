@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
     tools:context=".CalificacionUser">
 
     <TextView
@@ -24,6 +25,9 @@
         android:layout_marginStart="84dp"
         android:layout_marginTop="120dp"
         android:numStars="5"
+        android:progressBackgroundTint="@color/white"
+
+        android:progressTint="#FFEB3B"
         android:rating="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
     tools:context=".GoodbyeActivity">
 
     <TextView
@@ -24,12 +25,11 @@
         android:layout_height="120dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
-        android:drawableRight="@drawable/img_regalo"
         android:background="@color/white"
+        android:drawableRight="@drawable/img_regalo"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
         android:id="@+id/textView11"
@@ -37,7 +37,7 @@
         android:layout_height="79dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="44dp"
-        android:text="Pruebe suerte y busque su premio"
+        android:text="Prueba de suerte"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btn_giroruleta"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -48,19 +48,18 @@
         android:layout_height="120dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="30dp"
-        android:background="@color/white"
         android:drawableRight="@drawable/img_enviarcorreo"
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_giroruleta"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/btn_giroruleta" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="214dp"
         android:layout_height="69dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
-        android:text="Envie resultados a su correo"
+        android:layout_marginTop="68dp"
+        android:text="Enviar resultados al correo"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btn_enviar"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -82,7 +81,7 @@
         android:layout_width="218dp"
         android:layout_height="74dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="76dp"
         android:text="Califique mi atencion"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btn_calificacion"
@@ -94,6 +93,7 @@
         android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+
         android:text="Finalizar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_calificacion" />

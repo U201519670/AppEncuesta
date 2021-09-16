@@ -15,7 +15,11 @@ class CalificacionUser : AppCompatActivity() {
             textrating.text="rating:"+f1.toString()
         }
 
+
+
         btn_calificar.setOnClickListener {
+
+
             startActivity(Intent(this, GoodbyeActivity::class.java))
         }
     }
