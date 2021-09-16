@@ -14,8 +14,12 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_goodbye)
 
 
-        val btnend: Button = this.findViewById(R.id.btn_giroruleta)
-        btnend.setOnClickListener(this)
+        val btngiro: Button = this.findViewById(R.id.btn_giroruleta)
+        btngiro.setOnClickListener(this)
+        val btncalificacion: Button = this.findViewById(R.id.btn_calificacion)
+        btncalificacion.setOnClickListener(this)
+        val btnenviar: Button = this.findViewById(R.id.btn_enviar)
+        btnenviar.setOnClickListener(this)
         return
     }
 
@@ -28,7 +32,7 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId){
             R.id.action_dash -> {
-                startActivity(Intent(this,MainActivity::class.java))
+                startActivity(Intent(this,RegaloUser::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -38,6 +42,12 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(p0: View?) {
         when (p0?.id) {
             R.id.btn_giroruleta -> startActivity(Intent(this, RegaloUser::class.java))
+        }
+        when (p0?.id) {
+            R.id.btn_calificacion -> startActivity(Intent(this, CalificacionUser::class.java))
+        }
+        when (p0?.id) {
+            R.id.btn_enviar -> startActivity(Intent(this, EnviarCorreo::class.java))
         }
     }
 
