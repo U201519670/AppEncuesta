@@ -3,6 +3,8 @@ package com.example.myproject1
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
+import android.icu.number.IntegerWidth
+import android.widget.RatingBar
 
 class DAOCalificacion (myContext: Context) {
     private var dbHelper: DbHelper = DbHelper(myContext)
