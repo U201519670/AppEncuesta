@@ -7,8 +7,8 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="5dp"
-        android:layout_height="40dp"
-        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
         android:backgroundTint="#B30817"/>
 
     <LinearLayout
@@ -19,20 +19,21 @@
 
         <ImageView
             android:id="@+id/imgFramework"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:src="@drawable/ic_launcher_background"
             android:layout_margin="5dp"/>
+
         <TextView
             android:id="@+id/txtNomFramework"
-            android:layout_width="match_parent"
+            android:layout_width="163dp"
             android:layout_height="wrap_content"
-            android:text="Seleccione"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:textStyle="bold"
+            android:text="Seleccione"
+            android:textColor="@color/black"
             android:textSize="18sp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

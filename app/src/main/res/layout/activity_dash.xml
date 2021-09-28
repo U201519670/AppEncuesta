@@ -93,7 +93,7 @@
 
         <Spinner
             android:layout_marginTop="8dp"
-            android:id="@+id/spnLocales"
+            android:id="@+id/spLocales"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/item_spinner_framework"
@@ -266,7 +266,7 @@
 
         <Spinner
             android:layout_marginTop="8dp"
-            android:id="@+id/spnServicios"
+            android:id="@+id/spServicios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/item_spinner_framework"
@@ -294,6 +294,7 @@
         android:text="Iniciar encuesta"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_5" />
 
