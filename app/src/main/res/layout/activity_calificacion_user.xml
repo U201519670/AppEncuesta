@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
     tools:context=".CalificacionUser">
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="52dp"
-        android:text="Califica nuestra atencion"
+        android:layout_width="223dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="60dp"
+        android:text="Califica mi atencion"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +23,11 @@
         android:layout_width="241dp"
         android:layout_height="60dp"
         android:layout_marginStart="84dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="32dp"
         android:numStars="5"
+        android:progressBackgroundTint="@color/white"
+
+        android:progressTint="#FFEB3B"
         android:rating="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
@@ -33,9 +37,8 @@
         android:id="@+id/textrating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="68dp"
-        android:text="Rating:0"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
@@ -46,6 +49,7 @@
         android:layout_marginStart="58dp"
         android:layout_marginTop="50dp"
         android:text="CALIFICAR"
+        android:onClick="calificar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textrating" />
 

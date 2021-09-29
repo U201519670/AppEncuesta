@@ -1,6 +1,7 @@
 package com.example.myproject1
 
 import android.content.Intent
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -16,10 +17,13 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
 
         val btngiro: Button = this.findViewById(R.id.btn_giroruleta)
         btngiro.setOnClickListener(this)
+        btngiro.setBackgroundColor(Color.CYAN)
         val btncalificacion: Button = this.findViewById(R.id.btn_calificacion)
         btncalificacion.setOnClickListener(this)
         val btnenviar: Button = this.findViewById(R.id.btn_enviar)
         btnenviar.setOnClickListener(this)
+        val btnfinalizar: Button = this.findViewById(R.id.btn_finalizar)
+        btnfinalizar.setOnClickListener(this)
         return
     }
 
@@ -48,6 +52,9 @@ class GoodbyeActivity : AppCompatActivity(), View.OnClickListener {
         }
         when (p0?.id) {
             R.id.btn_enviar -> startActivity(Intent(this, EnviarCorreo::class.java))
+        }
+        when (p0?.id) {
+            R.id.btn_finalizar -> startActivity(Intent(this, MainActivity::class.java))
         }
     }
 

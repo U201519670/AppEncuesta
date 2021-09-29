@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "507174987844",
+    "firebase_url": "https://dbappenc-default-rtdb.firebaseio.com",
+    "project_id": "dbappenc",
+    "storage_bucket": "dbappenc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507174987844:android:b85665c10f91f63e6ff411",
+        "android_client_info": {
+          "package_name": "com.example.myproject1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507174987844-csh097kefmsrr2omj8g0urh9aj19pvjf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgLYnXnE3XwgeEZP2PewQp85hronLPSE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507174987844-csh097kefmsrr2omj8g0urh9aj19pvjf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
