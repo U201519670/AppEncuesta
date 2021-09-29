@@ -22,7 +22,6 @@ import java.util.*
 
 class DashActivity : AppCompatActivity(), View.OnClickListener {
 
-    //private var textView16: TextView? = null
     private var textView12: TextView? = null
     private var textView13: TextView? = null
     var spLocales: Spinner? = null
@@ -49,7 +48,7 @@ class DashActivity : AppCompatActivity(), View.OnClickListener {
             override fun onItemSelected(adapterView: AdapterView<*>, view: View, i: Int, l: Long) {
                 val idLoc = (adapterView.selectedItem as Locales).id
                 val nombreLoc = (adapterView.selectedItem as Locales).nombre
-                Toast.makeText(this@DashActivity, "$idLoc - $nombreLoc", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@DashActivity, "$idLoc - $nombreLoc", Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
@@ -70,7 +69,7 @@ class DashActivity : AppCompatActivity(), View.OnClickListener {
             override fun onItemSelected(adapterView: AdapterView<*>, view: View, i: Int, l: Long) {
                 val idSer = (adapterView.selectedItem as Servicios).id
                 val nombreSer = (adapterView.selectedItem as Servicios).nombre
-                Toast.makeText(this@DashActivity, "$idSer - $nombreSer", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@DashActivity, "$idSer - $nombreSer", Toast.LENGTH_SHORT).show()
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}

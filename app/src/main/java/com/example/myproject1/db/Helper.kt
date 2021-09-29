@@ -2,10 +2,9 @@ package com.example.myproject1.db
 
 import android.content.Context
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.myproject1.db.Helper
 import android.database.sqlite.SQLiteDatabase
 
-open class Helper(context: Context?) :
+open class Helper(context: Context?, s: String, nothing: Nothing?, i: Int) :
     SQLiteOpenHelper(context, BASE_NOMBRE, null, BASE_VERSION) {
     override fun onCreate(sqLiteDatabase: SQLiteDatabase) {
         sqLiteDatabase.execSQL(
@@ -43,10 +42,10 @@ open class Helper(context: Context?) :
         )
         sqLiteDatabase.execSQL(
             "INSERT INTO " + TABLE_USUARIOS + "(id, dni, nombre, apellido, ludopata, correo, celular) VALUES" +
-                    "(1, '11111111', 'Marcos', 'Capcha', 0, 'mcapchaleonardo@gmail.com', 948154228), " +
-                    "(2, '22222222', 'Carlos', 'Alcantara', 1, 'calcantara@gmail.com', 933333333)," +
-                    "(3, '33333333', 'Angel', 'Ventura', 0, 'aventura@gmail.com', 955555555)," +
-                    "(4, '44444444', 'Luis', 'Quintana', 1, 'cquintana@gmail.com', 944444444)"
+                    "(1, 11111111, 'Marcos', 'Capcha', 0, 'mcapchaleonardo@gmail.com', 948154228), " +
+                    "(2, 22222222, 'Carlos', 'Alcantara', 1, 'calcantara@gmail.com', 933333333)," +
+                    "(3, 33333333, 'Angel', 'Ventura', 0, 'aventura@gmail.com', 955555555)," +
+                    "(4, 44444444, 'Luis', 'Quintana', 1, 'cquintana@gmail.com', 944444444)"
         )
 
         sqLiteDatabase.execSQL(
@@ -60,17 +59,18 @@ open class Helper(context: Context?) :
                     "pregunta6 INTEGER NOT NULL," +
                     "pregunta7 INTEGER NOT NULL)"
         )
-        sqLiteDatabase.execSQL(
-            "INSERT INTO " + TABLE_USUARIOS + "(id, dni, nombre, apellido, ludopata, correo, celular) VALUES" +
-                    "(null, null, null, null, null, null, null, null)"
-        )
 
+        sqLiteDatabase.execSQL(
+            "INSERT INTO " + TABLE_REGISTROS + "(id, pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7) VALUES" +
+                    "(1, 1, 1, 1, 1, 1, 1, 1)"
+        )
     }
 
     override fun onUpgrade(sqLiteDatabase: SQLiteDatabase, i: Int, i1: Int) {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_LOCALES)
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_SERVICIOS)
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_USUARIOS)
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_REGISTROS)
         onCreate(sqLiteDatabase)
     }
 
@@ -81,7 +81,7 @@ open class Helper(context: Context?) :
 
     companion object {
         private const val BASE_NOMBRE = "db_casino.db"
-        private const val BASE_VERSION = 3
+        private const val BASE_VERSION = 7
 
     }
 }

@@ -25,10 +25,16 @@
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/menu/main.xml" value="0.2546875" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.38333333333333336" />
         <entry key="..\:/Users/fredh/StudioProjects/MyProject1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.38333333333333336" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/drawable/rb_options.xml" value="0.2203125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/drawable/spinner_style.xml" value="0.2203125" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_dash.xml" value="0.25" />
-        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_sala_de_juego.xml" value="0.3684210526315789" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_form.xml" value="0.18" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_goodbye.xml" value="0.12" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_prueba.xml" value="0.22" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/activity_sala_de_juego.xml" value="0.25" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
         <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/item_spinner_framework.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/mcapcha/AndroidStudioProjects/AppEncuesta2/app/src/main/res/layout/ludopata_check_fragment2.xml" value="0.18" />
       </map>
     </option>
   </component>

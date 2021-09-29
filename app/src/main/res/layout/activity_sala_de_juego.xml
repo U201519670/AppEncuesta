@@ -43,8 +43,18 @@
             android:orientation="vertical"
             android:paddingBottom="32dp">
 
+            <EditText
+                android:id="@+id/id_encuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Ingrese el número de encuesta"
+                android:inputType="number" />
+
             <TextView
                 android:id="@+id/sj_p1"
+                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -87,7 +97,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -165,7 +174,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -243,7 +251,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -321,7 +328,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -399,7 +405,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -477,7 +482,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -555,7 +559,6 @@
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:button="@android:color/transparent"
-                    android:checked="true"
                     android:textColor="@drawable/txt_rb"
                     android:textStyle="bold"
                     android:background="@drawable/rb_options"
@@ -588,17 +591,31 @@
                     android:text="5" />
             </RadioGroup>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/sj_guardar"
+            <Button
+                android:id="@+id/btnLimpiar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 android:background="@drawable/caja_dash"
+                android:onClick="onClick"
+                android:text="Limpiar Selección"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/caja_dash"
+                android:onClick="onClick"
                 android:text="Guardar"
-                android:textColor="#B30817"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>

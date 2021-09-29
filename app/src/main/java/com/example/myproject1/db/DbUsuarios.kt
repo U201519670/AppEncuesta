@@ -2,11 +2,9 @@ package com.example.myproject1.db
 
 import android.content.Context
 import android.database.Cursor
-import com.example.myproject1.db.Helper
-import android.database.sqlite.SQLiteDatabase
 import java.lang.Exception
 
-class DbUsuarios(context: Context?) : Helper(context) {
+class DbUsuarios(context: Context?) : Helper(context, String(), null, 7) {
     fun mostarUsuarios(): Cursor? {
         return try {
             val bd = this.readableDatabase
