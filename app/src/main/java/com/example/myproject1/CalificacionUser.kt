@@ -10,11 +10,15 @@ import android.widget.Button
 import android.widget.RatingBar
 import android.widget.TextView
 import android.widget.Toast
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_calificacion_user.*
 import org.w3c.dom.Text
 import kotlin.math.log
 
 class CalificacionUser : AppCompatActivity() , View.OnClickListener{
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calificacion_user)
@@ -24,7 +28,9 @@ class CalificacionUser : AppCompatActivity() , View.OnClickListener{
             textrating.text=f1.toString()
         }
 
-       // btn_calificar.setOnClickListener {
+       btn_calificar.setOnClickListener {
+
+       }
          //   startActivity(Intent(this, GoodbyeActivity::class.java))
       //  }
 
@@ -47,6 +53,7 @@ class CalificacionUser : AppCompatActivity() , View.OnClickListener{
 
             }catch (e: DAOException){
               e.message }
+
 
 
     }

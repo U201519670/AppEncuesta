@@ -11,7 +11,7 @@ class EnviarCorreo : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enviar_correo)
 
-        val btnfinalizar: Button = this.findViewById(R.id.btnenviar)
+        val btnfinalizar: Button = this.findViewById(R.id.btnregresar)
         btnfinalizar.setOnClickListener(this)
         return
     }
