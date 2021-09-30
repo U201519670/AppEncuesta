@@ -39,5 +39,6 @@
         <item>33333333</item>
 
     </string-array>
+    <string name="title_activity_mapa_locales">Mapa_Locales</string>
 
 </resources>

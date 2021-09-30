@@ -134,6 +134,10 @@ class DashActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(Intent(this, DatosClientesActivity::class.java))
         }
 
+        imageView4.setOnClickListener {
+            startActivity(Intent(this, Mapa_Locales::class.java))
+        }
+
         /**linearLayout_5.setOnClickListener {
             startActivity(Intent(this, ServiciosActivity::class.java))
         }
