@@ -29,9 +29,9 @@ class CalificacionUser : AppCompatActivity() , View.OnClickListener{
         }
 
        btn_calificar.setOnClickListener {
-
+           startActivity(Intent(this, GoodbyeActivity::class.java))
        }
-         //   startActivity(Intent(this, GoodbyeActivity::class.java))
+         //
       //  }
 
     }

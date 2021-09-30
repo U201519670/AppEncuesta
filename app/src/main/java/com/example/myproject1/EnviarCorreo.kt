@@ -16,32 +16,33 @@ import android.content.pm.PackageManager
 import android.util.Log
 
 import androidx.core.content.ContextCompat
-
-
+import kotlinx.android.synthetic.main.activity_goodbye.*
 
 
 class EnviarCorreo : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_enviar_correo)
-
-
-
-
-
-        val btnfinalizar: Button = this.findViewById(R.id.btnregresar)
-        btnfinalizar.setOnClickListener(this)
-        return
+        checkSMSStatePermission()
+        val telefono=telefono
 
         btnenviar3.setOnClickListener {
-            enviarmensaje("963760824")
+
+            enviarmensaje(telefono.toString())
+            startActivity(Intent(this, GoodbyeActivity::class.java))
         }
+
+        btnregresar.setOnClickListener {
+
+            startActivity(Intent(this, GoodbyeActivity::class.java))
+        }
+
     }
 
     fun enviarmensaje(telefono:String){
-            var numero=telefono
-            var sms=SmsManager.getDefault();
-            var mensaje1="Te recomedo tu amigo Juan , ganaste un premio de 10% en tu primera compra de fichas.visitanos en nuestro local de Miraflores"
+            val numero=telefono
+            val sms=SmsManager.getDefault();
+            val mensaje1="Te recomedo tu amigo Juan , ganaste un premio de 10% en tu primera compra de fichas.visitanos en nuestro local de Miraflores"
             sms.sendTextMessage(numero,null,mensaje1,null,null);
 
 
